@@ -7,6 +7,8 @@
 		"test": "jest"
 	},
 	"dependencies": {
+		"axios": "^0.18.0",
+		"fetch": "^1.1.0",
 		"react": "16.0.0-alpha.6",
 		"react-native": "^0.56.0"
 	},
