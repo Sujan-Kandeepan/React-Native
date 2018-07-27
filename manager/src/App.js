@@ -3,7 +3,6 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import ReduxThunk from 'redux-thunk';
 
-import LoginForm from './components/LoginForm';
 import reducers from './reducers';
 import Router from './Router';
 
@@ -11,6 +10,8 @@ class App extends Component {
   componentWillMount() {
     const firebase = require('firebase'); // eslint-disable-line global-require
     require('firebase/auth'); // eslint-disable-line global-require
+
+    console.ignoredYellowBox = ['Setting a timer'];
 
     firebase.initializeApp({
       apiKey: '',
